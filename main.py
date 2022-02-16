@@ -1,5 +1,7 @@
 # This is a sample Python script.
-
+import tack_1
+import math
+import socket
 
 def print_hi(name):
 
