@@ -1,0 +1,1 @@
+print('tack_1')
