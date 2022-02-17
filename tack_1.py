@@ -1,1 +1,0 @@
-print('tack_1')

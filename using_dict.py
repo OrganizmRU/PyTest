@@ -19,4 +19,4 @@ if 'Max' in ab:
 
 print('\n', ab.items())       # Метод items возвращает список кортежей из словаря
 
-help(dict)
+# help(dict)
