@@ -7,7 +7,7 @@ print('Номер Swaroop\'а -', ab['Swaroop'])
 
 del ab['Nik']
 
-print('В адресной книге {} контакта'.format(len(ab)))
+print('\nВ адресной книге {} контакта\n'.format(len(ab)))
 
 for name, number in ab.items():
       print('Контакт {} с адресом {}'.format(name, number))
@@ -15,7 +15,7 @@ for name, number in ab.items():
 ab['Max'] = '+7-905'
 
 if 'Max' in ab:
-      print('Номер Макса - ', ab['Max'])
+      print('\nНомер Макса - ', ab['Max'])
 
 
 
