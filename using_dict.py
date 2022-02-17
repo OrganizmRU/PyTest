@@ -15,7 +15,8 @@ for name, number in ab.items():
 ab['Max'] = '+7-905'
 
 if 'Max' in ab:
-      print('\nНомер Макса - ', ab['Max'])
+      print('\nМакс есть в справочнике, его номер - ', ab['Max'])
 
+print('\n', ab.items())       # Метод items возвращает список кортежей из словаря
 
-
+help(dict)
