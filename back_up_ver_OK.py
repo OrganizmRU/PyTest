@@ -18,9 +18,9 @@ print('source -', source)
 target_dir_for_backup = 'D:\\backups'
 print('target_dir -', target_dir_for_backup)
 
-# target = target_dir_for_backup + time.strftime('%Y%m%d_%H%M%S') + '.zip'
 target_file = target_dir_for_backup + os.sep + time.strftime('%Y%m%d_%H%M%S') + '.zip'
-# os.sep добавляет разделитель ОС для пути
+# os.sep добавляет вместо себя разделитель ОС для пути
+# time.strftime('%Y%m%d_%H%M%S') переводит кортеж времени в строку и возвращает в требуемом формате
 print('target file -', target_file)
 
 zip_command = "7z a {0} {1}".format(target_file, ' '.join(source))
