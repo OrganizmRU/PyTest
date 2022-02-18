@@ -1,12 +1,5 @@
 import os
 import time
-
-source = ['D:\\for_backup']
-print('source - ', source)
-
-target_dir_for_backup = 'D:\\'
-print('target_dir', target_dir_for_backup)
-
 # list_sep = dir(os)
 # print(list_sep)
 # for i in list_sep:
@@ -18,6 +11,11 @@ print('target_dir', target_dir_for_backup)
 # print(time.strftime('%Y%m%d_%H%M%S'))
 #
 # help(time)
+source = ['D:\\for_backup']
+print('source - ', source)
+
+target_dir_for_backup = 'D:\\'
+print('target_dir', target_dir_for_backup)
 
 target = target_dir_for_backup + os.sep + time.strftime('%Y%m%d_%H%M%S') + '.zip'
 print('target command', target)
