@@ -9,7 +9,7 @@ class Person:
         self.name2 = lname
         self.age = age
 
-    def say_Hi(self) -> str:
+    def say_hi(self) -> str:
         # print('Hi, {}. I know you!'.format(self.name1))
         # print('Your Last name is', self.name2)
         # print('Your age is', self.age)
@@ -22,7 +22,7 @@ class Person:
 print(f'\n{Person.__doc__}')
 
 AndGr = Person('Andrey', 'Grachev', 30)
-print(AndGr.say_Hi())
+print(AndGr.say_hi())
 
 # YuriLop = Person('Yuri', 'Lopuhin', 32)
 # YuriLop.sayHi()
