@@ -9,16 +9,21 @@ class Person:
         self.name2 = lname
         self.age = age
 
-    def sayHi(self):
-        print('Hi, {}. I know you!'.format(self.name1))
-        print('Your Last name is', self.name2)
-        print('Your age is', self.age)
+    def say_Hi(self) -> str:
+        # print('Hi, {}. I know you!'.format(self.name1))
+        # print('Your Last name is', self.name2)
+        # print('Your age is', self.age)
+        full = f'Hi, {self.name1}. I know you! Your Last name is {self.name2}. Your age is {self.age}'
+        return full
 
 # =======================================================================
 
 
-And = Person('Andrey', 'Grachev', 30)
-And.sayHi()
+print(f'\n{Person.__doc__}')
 
-print(Person.__doc__)
+AndGr = Person('Andrey', 'Grachev', 30)
+print(AndGr.say_Hi())
+
+# YuriLop = Person('Yuri', 'Lopuhin', 32)
+# YuriLop.sayHi()
 
