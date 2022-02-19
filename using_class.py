@@ -49,3 +49,4 @@ Person.how_many()
 AlekseyZol = Person('Aleksey', 'Zolotuhin', 34)
 print(AlekseyZol.say_hi())
 Person.how_many()
+
