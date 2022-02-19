@@ -32,4 +32,3 @@ if os.system(zip_command) == 0:
     print('Ок, проверь архив в', target_dir_for_backup)
 else:
     print('Ошибка, проверь код')
-
