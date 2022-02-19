@@ -1,5 +1,7 @@
 import os
 import time
+import zipfile
+
 # list_sep = dir(os)
 # print(list_sep)
 # for i in list_sep:
@@ -32,7 +34,7 @@ zip_command = "7z a {0} {1}".format(target_file, ' '.join(source)) + ' > nul'
 # -mx[N] : set compression level: -mx1(fastest)... - mx9(ultra)
 # -r[-|0] : Recurse subdirectories for name search (архивировать и вложенные папки, но работает и без этого)
 
-if os.system(zip_command) == 0:
-    print('Ок, проверь архив в', target_dir_for_backup)
-else:
-    print('Ошибка, проверь код')
+# if os.system(zip_command) == 0:
+#     print('Ок, проверь архив в', target_dir_for_backup)
+# else:
+#     print('Ошибка, проверь код')
