@@ -23,7 +23,7 @@ class Person:
 
     def say_hi(self) -> str:
         '''Крутая функция расскажет о тебе.'''
-        return f'Hi, {self.name1}. I know you! Your Last name is {self.name2}. Your age is {self.age}'
+        return f'Hi, I\'m {self.name1}. I know you! Your Last name is {self.name2}. Your age is {self.age}'
 
     @staticmethod       # Декоратор для ститичного метода класса
     def how_many():
@@ -32,7 +32,7 @@ class Person:
         print(f'Сейчас у нас в гостях - {Person.population}')
     # how_many = staticmethod(how_many)
 
-# =======================================================================
+# ========================================================================================================
 
 
 print(f'\n{Person.say_hi.__doc__}')
@@ -44,5 +44,8 @@ Person.how_many()
 
 YuriLop = Person('Yuri', 'Lopuhin', 32)
 print(YuriLop.say_hi())
-# print(f'Пополяция людей достигла - {YuriLop.population}')
+Person.how_many()
+
+AlekseyZol = Person('Aleksey', 'Zolotuhin', 34)
+print(AlekseyZol.say_hi())
 Person.how_many()
