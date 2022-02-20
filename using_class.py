@@ -36,6 +36,8 @@ class Person:
 
 
 print(f'\n{Person.say_hi.__doc__}')
+# print(Person.__init__.__annotations__)      # Выводит аннотацию к magic method __init__
+# print(Person.say_hi.__annotations__)
 
 AndGr = Person('Andrey', 'Grachev', 30)
 print(AndGr.say_hi())
@@ -49,4 +51,3 @@ Person.how_many()
 AlekseyZol = Person('Aleksey', 'Zolotuhin', 34)
 print(AlekseyZol.say_hi())
 Person.how_many()
-
