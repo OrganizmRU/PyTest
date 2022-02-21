@@ -11,17 +11,19 @@ a = list('абвгдеёжзийклмнопрстуфхцчшщъыьэюя')
 _ = list('?!,. ')
 
 
-something = list(input('Введите текст: '))
-for i in something:
-    for j in A:
-        if i == j:
-            something[something.index(i)] = a[a.index(j)]
-    for j in _:
-        if i == j:
-            del something[something.index(i)]
-    print(something)
+text_in = list(input('Введите текст: '))
+text_edit = []
 
-# if (is_palindrom(something)):
-#     print('да, это полиндром')
-# else:
-#     print('нет, это не палиндром')
+print('! -', text_in)
+for i, val in enumerate(text_in):
+    for j in range(len(A)):
+        if text_in[i] == A[j]:
+            text_edit.append(a[j])
+        elif text_in[i] == a[j]:
+            text_edit.append(text_in[i])
+print('? -', text_edit)
+
+if (is_palindrom(text_edit)):
+    print('да, это полиндром')
+else:
+    print('нет, это не палиндром')
