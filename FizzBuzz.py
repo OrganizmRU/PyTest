@@ -1,5 +1,5 @@
 import timeit
-from datetime import datetime
+from datetime import datetime as DT
 
 
 n = int(input('Введите целое число - '))
@@ -34,7 +34,7 @@ for i in range(1, n+1):
 # =================================================================
 # Сейчас посчитаем время выполнения кода модулем datetime
 
-# start_time = datetime.now()
+# start_time = DT.now()
 # for i in range(1, 5000):
 #     out = ''
 #     if i % 3 == 0:
@@ -44,4 +44,4 @@ for i in range(1, n+1):
 #     if out == '':
 #         out = i
 #     print(out)
-# print(datetime.now() - start_time)
+# print(DT.now() - start_time)
