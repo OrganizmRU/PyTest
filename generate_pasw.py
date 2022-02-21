@@ -4,8 +4,8 @@ import random
 def generate_password(m):
     for i in range(5):
         pasw = ''.join([random.choice(random.choice(letter)) for _ in range(m)])
-        # print(pasw)
-        # print(set(pasw))
+        x = pasw
+        y = set(pasw)
         if len(pasw) == len(set(pasw)):
             # print('Ok', i)
             return pasw
