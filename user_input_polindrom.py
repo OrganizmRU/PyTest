@@ -1,4 +1,4 @@
-def reverse(text):
+def reverse(text: list) -> list:
     return text[::-1]                  # реверсирует весь список
 
 
@@ -8,9 +8,10 @@ def is_palindrom(text: list) -> bool:
     else:
         return False
 
-A = list('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ')
-a = list('абвгдеёжзийклмнопрстуфхцчшщъыьэюя')
-_ = list('?!,. ')
+
+A = tuple('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ')
+a = tuple('абвгдеёжзийклмнопрстуфхцчшщъыьэюя')
+_ = tuple('?!,. ')
 
 try:
     text_in = list(input('Введите текст: '))
@@ -22,10 +23,10 @@ except NameError:
 except KeyboardInterrupt:
     print('\nВы отменили операцию')
 else:
-    print('Нет ошибок')
+    print('\nНет ошибок')
 
 
-print('! -', text_in)
+# print('! -', text_in)
 for i, val in enumerate(text_in):
     for j in range(len(A)):
         if text_in[i] == A[j]:
@@ -34,7 +35,7 @@ for i, val in enumerate(text_in):
             text_edit.append(text_in[i])
 print('? -', text_edit)
 
-if (is_palindrom(text_edit)):
-    print('да, это полиндром')
+if is_palindrom(text_edit):
+    print('\nда, это полиндром')
 else:
-    print('нет, это не палиндром')
+    print('\nнет, это не палиндром')
