@@ -12,7 +12,7 @@ print('Можем сохранить логи сюда - ', logging_file, '! А 
 # print(os.getenv('HOMEDRIVE'))
 # print(os.getenv('HOMEPATH'))
 # print(os.getenv('APPDATA'))
-# print(os.getenv('USERPROFILE'))
+print(os.getenv('USERPROFILE'))
 
 logging.basicConfig(filename=target_file, filemode='w', level=logging.DEBUG,
                     format='%(asctime)s : %(levelname)s : %(message)s')
