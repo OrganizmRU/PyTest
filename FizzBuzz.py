@@ -1,11 +1,11 @@
 import timeit
 from datetime import datetime as DT
 
-for i in range(20):
+n = int(input('Введите целое число - '))
+
+for i in range(n+1):
     print(i % 3 // 2 * 'Fizz' + i % 5 // 4 * 'Buzz' or i + 1)
 
-# n = int(input('Введите целое число - '))
-#
 # for i in range(1, n+1):
 #     if i % 3 == 0 and i % 5 == 0:
 #         print('{0} - FizzBuzz'.format(i))
