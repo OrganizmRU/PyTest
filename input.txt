@@ -1,0 +1,4 @@
+3
+punishment - malum, multa
+apple - malum, pomum, popula
+fruit - baca, bacca, popum

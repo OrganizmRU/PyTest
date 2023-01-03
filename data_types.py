@@ -1,31 +1,31 @@
 # Типы данных с 7 часового урока
 # NoneType - нет
 a = None
-print(a, type(a))
+print('None     => ', a, type(a), id(a))
 # int - целые числа
 a = 1
-print(a, type(a))
+print('int     => ', a, type(a), id(a))
 # float - числа с плавающей точкой
 a = 1.0
-print(a, type(a))
+print('float     => ', a, type(a), id(a))
 # complex - комплексные числа
 a = 1 + 1j
-print(a, type(a))
+print('complex     => ', a, type(a), id(a))
 # str - строка
 a = 'a'
-print(a, type(a))
+print('str     => ', a, type(a), id(a))
 # list - список
 a = [1, 1, 'a']
-print(a, type(a))
+print('list     => ', a, type(a), id(a))
 # tuple - кортеж
 a = (1, 1, 'a')
-print(a, type(a))
+print('tuple     => ', a, type(a), id(a))
 # set - множество
 a = {1, 1, 'a'}
-print(a, type(a))
+print('set     => ', a, type(a), id(a))
 # dict - словарь
 a = {'a': 1, 'b': 2}
-print(type(a))
+print('dict     => ', a, type(a), id(a))
 # bool - булевые значения
 a = True
-print(a, type(a))
+print('bool     => ', a, type(a), id(a))
